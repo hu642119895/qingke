@@ -15,6 +15,7 @@
 		923E83C11F5941B900EED272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E83BF1F5941B900EED272 /* LaunchScreen.storyboard */; };
 		923E83CC1F5941BB00EED272 /* ScanningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 923E83CB1F5941BB00EED272 /* ScanningTests.m */; };
 		923E83D71F5941BB00EED272 /* ScanningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 923E83D61F5941BB00EED272 /* ScanningUITests.m */; };
+		923E83E61F59438C00EED272 /* ScanningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923E83E51F59438C00EED272 /* ScanningViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		923E83D21F5941BB00EED272 /* ScanningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		923E83D61F5941BB00EED272 /* ScanningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanningUITests.m; sourceTree = "<group>"; };
 		923E83D81F5941BC00EED272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		923E83E41F59438C00EED272 /* ScanningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanningViewController.h; sourceTree = "<group>"; };
+		923E83E51F59438C00EED272 /* ScanningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanningViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				923E83B51F5941B800EED272 /* AppDelegate.m */,
 				923E83B71F5941B800EED272 /* ViewController.h */,
 				923E83B81F5941B800EED272 /* ViewController.m */,
+				923E83E41F59438C00EED272 /* ScanningViewController.h */,
+				923E83E51F59438C00EED272 /* ScanningViewController.m */,
 				923E83BA1F5941B900EED272 /* Main.storyboard */,
 				923E83BD1F5941B900EED272 /* Assets.xcassets */,
 				923E83BF1F5941B900EED272 /* LaunchScreen.storyboard */,
@@ -207,8 +212,8 @@
 				TargetAttributes = {
 					923E83AD1F5941B800EED272 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 3233W5SF7N;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 3PV33XPK7B;
+						ProvisioningStyle = Manual;
 					};
 					923E83C61F5941BA00EED272 = {
 						CreatedOnToolsVersion = 8.0;
@@ -277,6 +282,7 @@
 				923E83B91F5941B800EED272 /* ViewController.m in Sources */,
 				923E83B61F5941B800EED272 /* AppDelegate.m in Sources */,
 				923E83B31F5941B800EED272 /* main.m in Sources */,
+				923E83E61F59438C00EED272 /* ScanningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,11 +429,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3233W5SF7N;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 3PV33XPK7B;
 				INFOPLIST_FILE = Scanning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lk.Scanning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qk365LK.RoomSource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2f13a43b-9a6f-4e03-9fde-bae068e76a47";
+				PROVISIONING_PROFILE_SPECIFIER = RoomSource;
 			};
 			name = Debug;
 		};
@@ -435,11 +444,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3233W5SF7N;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 3PV33XPK7B;
 				INFOPLIST_FILE = Scanning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lk.Scanning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qk365LK.RoomSource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a9ba8f5c-4527-4e3a-b2f5-7c86398e3e93";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS Ad Hoc: com.qk365LK.RoomSource";
 			};
 			name = Release;
 		};
@@ -508,6 +520,7 @@
 				923E83DD1F5941BC00EED272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		923E83DE1F5941BC00EED272 /* Build configuration list for PBXNativeTarget "ScanningTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +529,7 @@
 				923E83E01F5941BC00EED272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		923E83E11F5941BC00EED272 /* Build configuration list for PBXNativeTarget "ScanningUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +538,7 @@
 				923E83E31F5941BC00EED272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
