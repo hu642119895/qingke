@@ -444,14 +444,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 3PV33XPK7B;
 				INFOPLIST_FILE = Scanning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qk365LK.RoomSource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e312e9ce-05f8-47b2-b37e-21f0e2926ec8";
-				PROVISIONING_PROFILE_SPECIFIER = roomDev;
+				PROVISIONING_PROFILE = "2f13a43b-9a6f-4e03-9fde-bae068e76a47";
+				PROVISIONING_PROFILE_SPECIFIER = RoomSource;
 			};
 			name = Release;
 		};
